@@ -31,7 +31,7 @@ def task_detail(request, pk):
 
     #to view single task
     if request.method == 'GET':
-        serializer TaskSerializer(task)
+        serializer = TaskSerializer(task)
         return Response(serializer.data)
 
     #to edit/update the tast
