@@ -46,10 +46,6 @@ def task_detail(request, pk):
 
     #to delete
     if request.method == 'DELETE':
-        task_title = task.title
         task.delete()
-        return Response(
-            #{'message': f'Task "{task_title}" successfully deleted'}
-            status=status.HTTP_204_NO_CONTENT
-            )         
+        return Response(status=status.HTTP_204_NO_CONTENT)         
 

@@ -1,0 +1,168 @@
+{
+  "info": {
+    "_postman_id": "dbbf6b40-b84d-419d-b56f-d677aa1d9200",
+    "name": "Tasks API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54592095",
+    "_collection_link": "https://go.postman.co/collection/54592095-dbbf6b40-b84d-419d-b56f-d677aa1d9200?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "GET All Tasks",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://potential-garbanzo-v56x9xw9qjjcp6g9-8000.app.github.dev/api/tasks/",
+          "protocol": "https",
+          "host": [
+            "potential-garbanzo-v56x9xw9qjjcp6g9-8000",
+            "app",
+            "github",
+            "dev"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "CREATE Task",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Feed the Dog\",\r\n  \"description\": \"Put food and water\",\r\n  \"is_completed\": false\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://potential-garbanzo-v56x9xw9qjjcp6g9-8000.app.github.dev/api/tasks/",
+          "protocol": "https",
+          "host": [
+            "potential-garbanzo-v56x9xw9qjjcp6g9-8000",
+            "app",
+            "github",
+            "dev"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "VIEW One Task",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://potential-garbanzo-v56x9xw9qjjcp6g9-8000.app.github.dev/api/tasks/3",
+          "protocol": "https",
+          "host": [
+            "potential-garbanzo-v56x9xw9qjjcp6g9-8000",
+            "app",
+            "github",
+            "dev"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "UPDATE Task",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"title\": \"Buy groceries\",\r\n  \"description\": \"Milk, bread, eggs\",\r\n  \"is_completed\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://potential-garbanzo-v56x9xw9qjjcp6g9-8000.app.github.dev/api/tasks/5",
+          "protocol": "https",
+          "host": [
+            "potential-garbanzo-v56x9xw9qjjcp6g9-8000",
+            "app",
+            "github",
+            "dev"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE Task",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "https://potential-garbanzo-v56x9xw9qjjcp6g9-8000.app.github.dev/api/tasks/11",
+          "protocol": "https",
+          "host": [
+            "potential-garbanzo-v56x9xw9qjjcp6g9-8000",
+            "app",
+            "github",
+            "dev"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            "11"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
