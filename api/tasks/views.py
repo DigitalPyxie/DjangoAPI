@@ -49,7 +49,7 @@ def task_detail(request, pk):
         task_title = task.title
         task.delete()
         return Response(
-            {'message': f'Task "{task_title}" successfully deleted'},
+            #{'message': f'Task "{task_title}" successfully deleted'}
             status=status.HTTP_204_NO_CONTENT
             )         
 
